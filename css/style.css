@@ -176,12 +176,14 @@ blockquote {
 }
 
 .articles__descr,
-.articles__info {
+.articles__info,
+.article__info {
   font-size: 16px;
   line-height: 26px;
 }
 
-.articles__info {
+.articles__info,
+.article__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -474,6 +476,138 @@ blockquote {
 }
 
 /* Article page */
+/* HERO SECTION */
 .article-hero-image {
   background-image: url("../img/hero_article_bg.png");
+}
+
+/* MAIN-ARTICLE SECTION */
+
+.main-article {
+  padding-top: 85px;
+  padding-bottom: 64px;
+}
+
+.article__info {
+  margin-bottom: 51px;
+  justify-content: flex-start;
+}
+
+.article__info .tags {
+  margin-right: 30px;
+}
+
+.main-article__title {
+  margin-bottom: 6px;
+}
+
+.article {
+  margin-bottom: 40px;
+}
+
+.article__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #2e2f22;
+}
+
+.article__text--first {
+  max-width: 75%;
+  margin-bottom: 25px;
+}
+
+.article__text--second {
+  max-width: 82%;
+  margin-bottom: 40px;
+}
+
+.article-block {
+  max-width: 83%;
+  margin-bottom: 40px;
+}
+
+.article-block__img {
+  margin-bottom: 5px;
+}
+
+.article-block__descr {
+  font-size: 14px;
+  line-height: 26px;
+  color: #2e2f22;
+}
+
+.article__text--third {
+  max-width: 82%;
+  margin-bottom: 25px;
+}
+
+.article__text--forth {
+  max-width: 80%;
+}
+
+.article-social__likes {
+  display: flex;
+  align-items: flex-end;
+  font-size: 24px;
+  line-height: 26px;
+  color: #2e2f22;
+}
+
+.article-social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 83%;
+  margin-bottom: 35px;
+}
+
+.article-social__likes::before {
+  content: url("../img/like.svg");
+  margin-right: 15px;
+}
+
+.article-social__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 214px;
+}
+
+.article-social__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.article-social__link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.article-social__link--tw {
+  background-image: url("../img/twitter.png");
+}
+
+.article-social__link--fb {
+  background-image: url("../img/fb.svg");
+}
+
+.article-social__link--vk {
+  background-image: url("../img/vk.svg");
+}
+
+.article__link {
+  position: relative;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: 1.9px;
+  color: #2e2f22;
+}
+
+.article__link::after {
+  position: absolute;
+  right: -91px;
+  top: -4px;
+  content: url("../img/arrow.svg");
 }
