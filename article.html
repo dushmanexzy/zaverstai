@@ -121,7 +121,7 @@
       <ul class="comments__list">
         <li class="comments__item comment">
           <div class="comment__author author">
-            <img src="" alt="" class="author__logo">
+            <img src="img/author-1.png" alt="Аватар пользователя" class="author__logo" width="50" height="50">
             <span class="author__name">Иван Петров</span>
           </div>
           <p class="comment__text">Отличная статья! Спасибо.</p>
@@ -129,14 +129,14 @@
 
         <li class="comments__item">
           <div class="comment__author author">
-            <img src="" alt="" class="author__logo">
+            <img src="img/author-2.png" alt="Аватар пользователя" class="author__logo" width="50" height="50">
             <span class="author__name">Ксения Ксения</span>
           </div>
           <p class="comment__text">Отличный текст, добавила в закладки.</p>
         </li>
         <li class="comments__item">
           <div class="comment__author author">
-            <img src="" alt="" class="author__logo">
+            <img src="img/author-3.png" alt="Аватар пользователя" class="author__logo" width="50" height="50">
             <span class="author__name">Иван Иванов</span>
           </div>
           <p class="comment__text">Основательный материал! Можешь посоветовать какие-то книги на эту тему?</p>
@@ -144,13 +144,17 @@
       </ul>
 
       <form action="#" class="comments__form form">
-        <div class="left-column">
-          <input class="form__input input-name" name="name" type="text" placeholder="Имя" required>
-          <input class="form__input input-email" name="email" type="email" placeholder="Почта" required>
-          <button class="form__btn" type="submit">Отправить</button>
-        </div>
+        <h3 class="comments-form__title">Оставить комментарий</h3>
 
-        <textarea class="form__textarea" name="comment">Написать комментарий...</textarea>
+        <div class="form__userarea">
+          <div class="left-column">
+            <input class="form__input input-name" name="name" type="text" placeholder="Имя" required>
+            <input class="form__input input-email" name="email" type="email" placeholder="Почта" required>
+            <button class="form__button" type="button">Отправить</button>
+          </div>
+
+          <textarea class="form__textarea" name="comment">Написать комментарий...</textarea>
+        </div>
       </form>
     </div>
   </section>
