@@ -96,14 +96,15 @@ blockquote {
 
 .hero-image {
   position: absolute;
-  left: 0;
+  left: 50%;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
+  width: 1440px;
   height: 581px;
-  background-image: url("../img/hero_bg.jpg");
+  background-image: url(../img/hero_bg.jpg);
   background-size: cover;
+  transform: translateX(-50%);
 }
 
 /* ARTICLES SECTION */
@@ -405,7 +406,6 @@ blockquote {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
-  ;
 }
 
 .form__block label {
@@ -473,3 +473,7 @@ blockquote {
   color: #2e2f22;
 }
 
+/* Article page */
+.article-hero-image {
+  background-image: url("../img/hero_article_bg.png");
+}
