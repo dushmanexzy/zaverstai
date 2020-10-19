@@ -142,10 +142,6 @@ select {
   color: #2e2f22;
 }
 
-.articles__select:active {
-  
-}
-
 .subheading {
   margin-right: auto;
   font-family: "Spectral SC";
@@ -605,7 +601,7 @@ select {
   background-image: url("../img/vk.svg");
 }
 
-.article__link {
+.main-article__link {
   position: relative;
   font-weight: 700;
   font-size: 36px;
@@ -614,7 +610,7 @@ select {
   color: #2e2f22;
 }
 
-.article__link::after {
+.main-article__link::after {
   position: absolute;
   right: -91px;
   top: -4px;
@@ -622,6 +618,9 @@ select {
 }
 
 /* COMMENTS SECTION */
+.comments {
+  padding-bottom: 80px;
+}
 .comments__list {
   display: flex;
   flex-direction: column;
@@ -676,7 +675,7 @@ select {
   color: #2e2f22;
 }
 
-.form__userarea {
+.comments-form__userarea {
   display: flex;
   justify-content: space-between;
 }
@@ -687,7 +686,7 @@ select {
   width: 224px;
 }
 
-.form__input {
+.comments-form__input {
   padding-bottom: 12px;
   font-size: 16px;
   line-height: 22px;
@@ -704,7 +703,7 @@ select {
   margin-bottom: 53px;
 }
 
-.form__button {
+.comments-form__button {
   width: 224px;
   height: 46px;
   font-size: 16px;

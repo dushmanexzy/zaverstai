@@ -40,7 +40,7 @@
   </section>
 
   <section class="main-article">
-    <div class="container article__container">
+    <div class="container main-article__container">
       <h2 class="main-article__title subheading">Как себя мотивировать</h2>
 
       <article class="main-article__block article">
@@ -96,7 +96,7 @@
         </p>
       </article>
 
-      <div class="article__social article-social">
+      <div class="main-article__social article-social">
         <span class="article-social__likes">16</span>
         <ul class="article-social__list">
           <li class="article-social__item">
@@ -111,7 +111,7 @@
         </ul>
       </div>
 
-      <a href="/index.html#articles" class="article__link">Ко всем статьям</a>
+      <a href="/index.html#articles" class="main-article__link">Ко всем статьям</a>
     </div>
   </section>
 
@@ -128,14 +128,14 @@
           <p class="comment__text">Отличная статья! Спасибо.</p>
         </li>
 
-        <li class="comments__item">
+        <li class="comments__item comment">
           <div class="comment__author author">
             <img src="img/author-2.png" alt="Аватар пользователя" class="author__logo" width="50" height="50">
             <span class="author__name">Ксения Ксения</span>
           </div>
           <p class="comment__text">Отличный текст, добавила в закладки.</p>
         </li>
-        <li class="comments__item">
+        <li class="comments__item comment">
           <div class="comment__author author">
             <img src="img/author-3.png" alt="Аватар пользователя" class="author__logo" width="50" height="50">
             <span class="author__name">Иван Иванов</span>
@@ -144,16 +144,16 @@
         </li>
       </ul>
 
-      <form action="#" class="comments__form form">
+      <form action="#" class="comments__form comments-form">
         <h3 class="comments-form__title">Оставить комментарий</h3>
 
-        <div class="form__userarea">
+        <div class="comments-form__userarea">
           <div class="left-column">
-            <input class="form__input input-name" name="name" type="text" placeholder="Имя" minlength="10"
+            <input class="comments-form__input input-name" name="name" type="text" placeholder="Имя" minlength="10"
               maxlength="200" required>
-            <input class="form__input input-email" name="email" type="email" placeholder="Почта" minlength="10"
+            <input class="comments-form__input input-email" name="email" type="email" placeholder="Почта" minlength="10"
               maxlength="200" required>
-            <button class="form__button" type="button">Отправить</button>
+            <button class="comments-form__button" type="button">Отправить</button>
           </div>
 
           <textarea class="form__textarea" name="comment">Написать комментарий...</textarea>
@@ -164,7 +164,7 @@
 
   <footer class="page-footer">
     <div class="container">
-      <ul class="social__list">
+      <ul class="social__list social">
         <li class="social__item">
           <a href="#" class="social__link">ВК</a>
         </li>
