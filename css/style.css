@@ -49,9 +49,9 @@ blockquote {
 
 select {
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
-  background: #d7d1c9 url("../img/select-arrow.svg") no-repeat right 20px center;
-  border-radius: 10px;
 }
 
 .visually-hidden {
@@ -76,15 +76,29 @@ select {
 
 .logo {
   margin-top: 5px;
+  transition: all 0.5s ease;
+}
+
+.logo[href]:hover {
+  opacity: 0.8;
+  transition: all 0.5s ease;
 }
 
 .page-header__container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .nav__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,6 +111,18 @@ select {
 .nav__link {
   font-size: 18px;
   line-height: 25px;
+  color: #2e2f22;
+  transition: all 0.5s ease;
+}
+
+.nav-link:hover {
+  color: #acc5d8;
+  transition: all 0.5s ease;
+}
+
+.nav-link:active {
+  color: #acc5d8b3;
+  transition: all 0.5s ease;
 }
 
 /* SECTION HERO-IMAGE */
@@ -121,12 +147,20 @@ select {
 }
 
 .articles__container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .articles__top {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
@@ -136,15 +170,23 @@ select {
   padding: 0 16px;
   width: 203px;
   height: 46px;
+  background: #d7d1c9 url("../img/select-arrow.svg") no-repeat right 20px center;
+  border-radius: 10px;
   font-family: "Open Sans";
   font-size: 16px;
   line-height: 22px;
   color: #2e2f22;
+  transition: all 0.5s ease;
+}
+
+.articles__select:hover {
+  background-color: #acc5d8;
+  transition: all 0.5s ease;
 }
 
 .subheading {
   margin-right: auto;
-  font-family: "Spectral SC";
+  font-family: "Spectral SC", "Times New Roman", serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 55px;
@@ -152,6 +194,10 @@ select {
 }
 
 .articles__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -170,7 +216,7 @@ select {
 
 .articles__item figcaption {
   margin-bottom: 10px;
-  font-family: "Spectral SC";
+  font-family: "Spectral SC", "Times New Roman", serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -221,7 +267,7 @@ select {
 .big-article h4 {
   margin-top: 298px;
   margin-bottom: 10px;
-  font-family: "Spectral SC";
+  font-family: "Spectral SC", "Times New Roman", serif;
   font-size: 20px;
   line-height: 30px;
 }
@@ -252,6 +298,10 @@ select {
 }
 
 .about__container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,6 +314,10 @@ select {
 }
 
 .about__info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -310,6 +364,10 @@ select {
 }
 
 .portfolio__container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -322,6 +380,10 @@ select {
 }
 
 .portfolio__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: space-between;
   margin-bottom: 105px;
@@ -361,7 +423,7 @@ select {
 
 .portfolio__item h4 {
   margin-bottom: 45px;
-  font-family: "Spectral SC";
+  font-family: 'Spectral SC', 'Times New Roman', serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -369,7 +431,7 @@ select {
 
 .portfolio__subtitle {
   margin-bottom: 17px;
-  font-family: "Spectral SC";
+  font-family: 'Spectral SC', 'Times New Roman', serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
@@ -406,6 +468,10 @@ select {
   padding-left: 81px;
   padding-right: 81px;
   padding-bottom: 62px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -416,6 +482,10 @@ select {
 }
 
 .form__block label {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-direction: column;
   font-family: "Spectral SC";
@@ -466,6 +536,10 @@ select {
 }
 
 .social__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -474,7 +548,7 @@ select {
 }
 
 .social__link {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 18px;
   line-height: 25px;
   color: #2e2f22;
