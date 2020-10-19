@@ -713,7 +713,7 @@ select {
   border-radius: 10px;
 }
 
-.form__textarea {
+.comment-form__textarea {
   padding-top: 16px;
   padding-left: 20px;
   width: 406px;
