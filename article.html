@@ -97,7 +97,7 @@
       </article>
 
       <div class="main-article__social article-social">
-        <span class="article-social__likes">16</span>
+        <span class="article-social__likes js-like-counter">16</span>
         <ul class="article-social__list">
           <li class="article-social__item">
             <a href="#" class="article-social__link article-social__link--tw"></a>
@@ -144,18 +144,18 @@
         </li>
       </ul>
 
-      <form action="#" class="comments__form comments-form">
+      <form action="#" class="comments__form comments-form js-form">
         <h3 class="comments-form__title">Оставить комментарий</h3>
 
         <div class="comments-form__userarea">
           <div class="left-column">
             <input class="comments-form__input input-name" name="name" type="text" placeholder="Имя" required>
             <input class="comments-form__input input-email" name="email" type="email" placeholder="Почта" required>
-            <button class="comments-form__button" type="button">Отправить</button>
+            <button class="comments-form__button section-button js-submit" type="submit">Отправить</button>
           </div>
 
-          <textarea class="comment-form__textarea" name="comment" minlength="10"
-            maxlength="200">Написать комментарий...</textarea>
+          <textarea class="comment-form__textarea js-message" name="comment" minlength="10"
+            maxlength="200" placeholder="Написать комментарий..."></textarea>
         </div>
       </form>
     </div>
@@ -182,6 +182,10 @@
       </ul>
     </div>
   </footer>
+
+  <script src="js/form.js"></script>
+  <script src="js/like.js"></script>
+  <script src="js/comment.js"></script>
 </body>
 
 </html>
