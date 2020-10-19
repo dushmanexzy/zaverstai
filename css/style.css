@@ -115,12 +115,12 @@ select {
   transition: all 0.5s ease;
 }
 
-.nav-link:hover {
+.nav__link:hover {
   color: #acc5d8;
   transition: all 0.5s ease;
 }
 
-.nav-link:active {
+.nav__link:active {
   color: #acc5d8b3;
   transition: all 0.5s ease;
 }
@@ -665,7 +665,7 @@ select {
 }
 
 .article-social__link--tw {
-  background-image: url("../img/twitter.png");
+  background-image: url("../img/tw.svg");
 }
 
 .article-social__link--fb {
