@@ -45,18 +45,18 @@
         <h2 class="subheading">Все статьи</h2>
 
         <select name="tags" id="tags" class="articles__select">
-          <option value="Выбрать тему" selected>Выбрать тему</option>
-          <option value="Город">Город</option>
-          <option value="Книги">Книги</option>
-          <option value="Путешествия">Путешествия</option>
-          <option value="Рецепты">Рецепты</option>
-          <option value="Фотографии">Фотографии</option>
-          <option value="Все статьи">Все статьи</option>
+          <option value="all" selected>Выбрать тему</option>
+          <option value="city">Город</option>
+          <option value="books">Книги</option>
+          <option value="travel">Путешествия</option>
+          <option value="recipe">Рецепты</option>
+          <option value="photo">Фотографии</option>
+          <option value="all">Все статьи</option>
         </select>
       </div>
 
       <ul class="articles__list">
-        <li class="articles__item" data-tag="Путешествия">
+        <li class="articles__item" data-tag="travel">
           <a href="/article.html">
             <article>
               <h3 class="visually-hidden">Берлин</h3>
@@ -75,7 +75,7 @@
           </a>
         </li>
 
-        <li class="articles__item" data-tag="Город">
+        <li class="articles__item" data-tag="city">
           <a href="/article.html">
             <article>
               <h3 class="visually-hidden">Колдбрю</h3>
@@ -94,7 +94,7 @@
           </a>
         </li>
 
-        <li class="articles__item" data-tag="Книги">
+        <li class="articles__item" data-tag="books">
           <a href="/article.html">
             <article>
               <h3 class="visually-hidden">Книги</h3>
@@ -113,7 +113,7 @@
           </a>
         </li>
 
-        <li class="articles__item big-article photos" data-tag="Фотографии">
+        <li class="articles__item big-article photos" data-tag="photo">
           <a href="/article.html">
             <article>
               <h4>Снимки на плёнку</h4>
@@ -128,7 +128,7 @@
           </a>
         </li>
 
-        <li class="articles__item big-article cheese" data-tag="Рецепты">
+        <li class="articles__item big-article cheese" data-tag="recipe">
           <a href="/article.html">
             <article>
               <h4>Домашний чизкейк</h4>
@@ -152,7 +152,7 @@
     <div class="container about__container">
       <h2 class="subheading about__title">Обо мне</h2>
 
-      <div class="about__info">
+      <article class="about__info">
         <img src="/img/about-me.png" alt="Девушка в красном сарафане сидит на песке босиком и улыбается в камеру">
 
         <div class="about__text">
@@ -181,7 +181,7 @@
             моего комфорта, <br> я действительно узнаю настояющую <br> себя.
           </blockquote>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 
@@ -192,7 +192,7 @@
       <ul class="portfolio__list">
         <li class="portfolio__item blog">
           <article>
-            <h4>Блог HTML Academy</h4>
+            <h3>Блог HTML Academy</h3>
             <p class="portfolio__subtitle">«Как учиться продуктивно»</p>
             <p class="portfolio__descr">Про основные методы обучения, <br>
               которые помогут быстро и надолго запомнить информацию.
@@ -202,7 +202,7 @@
 
         <li class="portfolio__item kiss">
           <article>
-            <h4>Журнал «LNK»</h4>
+            <h3>Журнал «LNK»</h3>
             <p class="portfolio__subtitle">«Зачем поцели нужны человеку? <br> И
               какие они бывают»
             </p>
@@ -216,7 +216,7 @@
 
         <li class="portfolio__item journal">
           <article>
-            <h4>Журнал «Т — Л»</h4>
+            <h3>Журнал «Т — Л»</h3>
             <p class="portfolio__subtitle">«Советы по эффективной удалённой
               работе»
             </p>
