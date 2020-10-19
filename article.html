@@ -13,7 +13,7 @@
   <header class="page-header">
     <div class="container page-header__container">
       <a class="logo" href="/">
-        <img src="img/group.svg" alt="Логотип блога Анны"  width="130" height="83">
+        <img src="img/group.svg" alt="Логотип блога Анны" width="130" height="83">
       </a>
 
       <nav class="nav page-header__nav">
@@ -149,8 +149,10 @@
 
         <div class="form__userarea">
           <div class="left-column">
-            <input class="form__input input-name" name="name" type="text" placeholder="Имя" required>
-            <input class="form__input input-email" name="email" type="email" placeholder="Почта" required>
+            <input class="form__input input-name" name="name" type="text" placeholder="Имя" minlength="10"
+              maxlength="200" required>
+            <input class="form__input input-email" name="email" type="email" placeholder="Почта" minlength="10"
+              maxlength="200" required>
             <button class="form__button" type="button">Отправить</button>
           </div>
 
