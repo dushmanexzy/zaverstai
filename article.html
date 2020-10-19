@@ -149,14 +149,13 @@
 
         <div class="comments-form__userarea">
           <div class="left-column">
-            <input class="comments-form__input input-name" name="name" type="text" placeholder="Имя" minlength="10"
-              maxlength="200" required>
-            <input class="comments-form__input input-email" name="email" type="email" placeholder="Почта" minlength="10"
-              maxlength="200" required>
+            <input class="comments-form__input input-name" name="name" type="text" placeholder="Имя" required>
+            <input class="comments-form__input input-email" name="email" type="email" placeholder="Почта" required>
             <button class="comments-form__button" type="button">Отправить</button>
           </div>
 
-          <textarea class="comment-form__textarea" name="comment">Написать комментарий...</textarea>
+          <textarea class="comment-form__textarea" name="comment" minlength="10"
+            maxlength="200">Написать комментарий...</textarea>
         </div>
       </form>
     </div>
