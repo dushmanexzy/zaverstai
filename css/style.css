@@ -47,6 +47,13 @@ blockquote {
   margin: 0;
 }
 
+select {
+  cursor: pointer;
+  appearance: none;
+  background: #d7d1c9 url("../img/select-arrow.svg") no-repeat right 20px center;
+  border-radius: 10px;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -129,12 +136,14 @@ blockquote {
   padding: 0 16px;
   width: 203px;
   height: 46px;
-  background: #d7d1c9;
-  border-radius: 10px;
   font-family: "Open Sans";
   font-size: 16px;
   line-height: 22px;
   color: #2e2f22;
+}
+
+.articles__select:active {
+  
 }
 
 .subheading {
